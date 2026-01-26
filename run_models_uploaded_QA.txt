@@ -1,0 +1,30 @@
+Question 1: Did the three model architectures classify the breed of dog in Dog_01.jpg to be the 
+same breed? If not, report the differences in the classifications.
+
+Answer: Yes, each model architecture correctly classified the dog breed, which was Labrador 
+retriever.
+
+------------------------------------------------------------------------------------------------
+
+Question 2:  Did each of the three model architectures classify the breed of dog in Dog_01.jpg 
+to be the same breed of dog as that model architecture classified Dog_02.jpg? If not, report the 
+differences in the classifications.
+
+Answer: Yes, each model architecture correctly classified the dog breed, even after the horizontal
+flip, which was a Labrador retriever.
+
+------------------------------------------------------------------------------------------------
+
+Question 3: Did the three model architectures correctly classify Animal_Name_01.jpg and 
+Object_Name_01.jpg to not be dogs? If not, report the misclassifications.
+
+Answer: Yes, all three model architectures correctly classified the non-dog images as not being
+dogs, also correctly classifying them as a zebra and a cup.
+
+------------------------------------------------------------------------------------------------
+
+Question 4: Which model architecture performed the best?
+
+Answer: In this instance, all three model architectures performed identically. The only
+differentiating factor was elapsed program runtime, where the Resnet and AlexNet 
+architectures performed better by 2 seconds.

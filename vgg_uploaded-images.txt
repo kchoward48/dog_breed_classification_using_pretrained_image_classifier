@@ -1,0 +1,80 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+Filename =  Zebra_01.jpg    Pet Label =  zebra
+Filename =  Dog_01.jpg    Pet Label =  dog
+Filename =  Dog_02.jpg    Pet Label =  dog
+Filename =  Teacup_01.jpg    Pet Label =  teacup
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                   Zebra_01.jpg  label:                      zebra
+ 2 key:                     Dog_01.jpg  label:                        dog
+ 3 key:                     Dog_02.jpg  label:                        dog
+ 4 key:                  Teacup_01.jpg  label:                     teacup
+
+     MATCH:
+
+                  Zebra_01.jpg: 
+Real:                      zebra   Classifier:                          zebra
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:             labrador retriever
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:             labrador retriever
+
+                 Teacup_01.jpg: 
+Real:                     teacup   Classifier:                            cup
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+                  Zebra_01.jpg: 
+Real:                      zebra   Classifier:                          zebra  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:             labrador retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:             labrador retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                 Teacup_01.jpg: 
+Real:                     teacup   Classifier:                            cup  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+# Total Images: 4
+# Dog Images:  2
+# Not-a-Dog Images: 2
+
+CNN Model Architecture: vgg
+% Not-a-Dog Correct: 100.0
+% Dogs Correct: 100.0
+% Breeds Correct: 0.0
+% Match Labels: 25.0
+
+All images were correctly classified as dogs/to the correct species.
+
+The following dog images were correctly classified as dogs, but failed to match on the breeds labeled/classified to: 
+[('dog', 'labrador retriever'), ('dog', 'labrador retriever')]
+
+** Total Elapsed Runtime: 0:0:2
